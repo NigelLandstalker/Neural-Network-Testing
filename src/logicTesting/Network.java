@@ -3,7 +3,7 @@ package logicTesting;
 public class Network {
 
 	public static Node[][] nodes;
-	private int size;
+	public static int size;
 	private int synapseCount;
 	public static boolean rewardValue;
 	public static final int distance = 1;
@@ -92,7 +92,7 @@ public class Network {
 			}
 			for (int i = 0; i < size; i++) {
 				for (int j = 0; j < size; j++) {
-					nodes[i][j].output();
+					nodes[i][j].outputSignal();
 				}
 			}
 			System.out.println("Tick " + (k + 1) + " complete!");

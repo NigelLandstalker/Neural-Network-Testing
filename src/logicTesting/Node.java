@@ -21,7 +21,7 @@ public class Node {
 		outputSynapses.add(new Synapse(x, y, recipientNodeX, recipientNodeY));
 	}
 
-	public void output() {
+	public void outputSignal() {
 		for (int i = 0; i < outputSynapses.size(); i++) {
 			if (currentState >= outputSynapses.get(i).usageWeight && currentState != 0) {
 				outputSynapses.get(i).sendSignal();

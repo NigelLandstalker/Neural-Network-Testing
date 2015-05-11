@@ -2,8 +2,8 @@ package logicTesting;
 
 public class Main {
 	public static void main(String[] args) {
-		Network network = new Network(3);
-		Network.nodes[0][0].nextStateBuffer = 1;
-		network.tick(1);
+		Network network = new Network(4);
+		IO.intInput(IO.getUserInput());
+		network.tick(3);
 	}
 }
