@@ -23,8 +23,8 @@ public class Node {
 
 	public void output() {
 		for (int i = 0; i < outputSynapses.size(); i++) {
-			if (outputSynapses.get(i).usageWeight >= currentState && currentState != 0) {
-				outputSynapses.get(i).sendSignal(); // add usageweight stuff here
+			if (currentState >= outputSynapses.get(i).usageWeight && currentState != 0) {
+				outputSynapses.get(i).sendSignal();
 			}
 		}
 	}

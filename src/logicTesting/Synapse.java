@@ -15,10 +15,10 @@ public class Synapse {
 
 	public void sendSignal() {
 		Network.nodes[location[2]][location[3]].nextStateBuffer++;
+		if (usageWeight >= 2 && Network.rewardValue) {
+			usageWeight--;
+		} else if (!Network.rewardValue) {
+			usageWeight++;
+		}
 	}
-
-	public void updateUsageWeight() {
-
-	}
-
 }
