@@ -1,7 +1,13 @@
 package logicTesting;
 
-public class Network {
+import java.io.Serializable;
 
+public class Network implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public static Node[][] nodes;
 	public static int size;
 	private int synapseCount;

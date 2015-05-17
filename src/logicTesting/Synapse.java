@@ -1,6 +1,12 @@
 package logicTesting;
 
-public class Synapse {
+import java.io.Serializable;
+
+public class Synapse implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public int usageWeight;
 	public int[] location = new int[4];
 
