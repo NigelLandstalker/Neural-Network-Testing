@@ -16,9 +16,6 @@ public abstract class IO {
 
 	public static void intInput(int[] inputArray) {
 		for (int i = 0; i < inputArray.length; i++) {
-			if (inputArray.length > Network.size) {
-				throw new ArrayIndexOutOfBoundsException(); // Will java do this automatically?
-			}
 			Network.nodes[0][i].nextStateBuffer = inputArray[i];
 		}
 	}
